@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #4CAF50;
+  color: white;
+}
+
+nav a {
+  margin: 0 0.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin: 0.2rem;
+  cursor: pointer;
+}
+
+section {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: white;
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+th, td {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+#subjects-container .subject {
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.subject h3 {
+  margin: 0;
+}
+
+.progress-bar {
+  height: 20px;
+  background-color: #4CAF50;
+  width: 0%;
+  border-radius: 4px;
+}
+
+.progress-container {
+  background-color: #ddd;
+  border-radius: 4px;
+  margin-top: 0.3rem;
+  height: 20px;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+.dark-mode section {
+  background-color: #444;
+}
+
+.dark-mode table, .dark-mode th, .dark-mode td {
+  border-color: #666;
+}
