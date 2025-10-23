@@ -4,30 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>StudyBuddy - Motivation</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>StudyBuddy - Motivation</h1>
+    <h1>StudyBuddy</h1>
     <nav>
       <a href="timetable.html">Timetable</a>
-      <a href="progress.html">Chapter Progress</a>
+      <a href="progress.html">Progress</a>
     </nav>
-    <button id="theme-toggle">Toggle Dark/Light Mode</button>
   </header>
 
   <section id="motivation">
-    <h2>Motivation of the Day</h2>
-    <p id="quote">Loading quote...</p>
-    <input type="text" id="custom-quote" placeholder="Add your own quote">
-    <button id="save-quote">Save Quote</button>
-    <button id="new-quote">New Quote</button>
+    <h2>Daily Motivation 💡</h2>
+    <blockquote id="quote"></blockquote>
   </section>
 
   <footer>
-    <p>StudyBuddy - Private & Offline</p>
+    <p>StudyBuddy — Stay Focused. Stay Strong.</p>
   </footer>
-  
-  <script src="script.js"></script>
+
+  <script>
+    const quotes = [
+      "Success doesn’t come to you — you go to it.",
+      "Push yourself, because no one else is going to do it for you.",
+      "Don’t watch the clock; do what it does. Keep going.",
+      "The secret of getting ahead is getting started.",
+      "It always seems impossible until it’s done.",
+      "Dream big. Work hard. Stay humble.",
+      "Believe you can, and you’re halfway there.",
+      "Small progress is still progress.",
+      "Discipline is choosing what you want most over what you want now.",
+      "Your only limit is your mind.",
+      "Study like there’s no tomorrow, because if you keep procrastinating, there won’t be.",
+      "Great things never come from comfort zones.",
+      "Stop doubting yourself. Work hard and make it happen.",
+      "Don’t let yesterday take up too much of today.",
+      "If you get tired, learn to rest — not to quit."
+    ];
+
+    const quoteEl = document.getElementById('quote');
+    const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+    quoteEl.textContent = randomQuote;
+  </script>
 </body>
 </html>
